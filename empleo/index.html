@@ -31,38 +31,80 @@
 </head>
 
 <body>
-    <nav class="full column fixed front">
+    <nav class="container fixed front">
         <a href="../">
-            <img src="../img/Logos_Unidades de Negocio/Logo_GCP.png" class="one columns one-offset half-top-margin" />
+            <img src="../img/Logos_Unidades de Negocio/Logo_GCP.png" class="one columns half-top-margin" />
         </a>
-        <div class="one-offset columns ten one-height">
-            <a href="../nosotros" class="two columns text-center block navbar-link one-top-margin-text">NOSOTROS</a>
-            <a href="../proyectos" class="two columns text-center block navbar-link one-top-margin-text">PROYECTOS</a>
-            <a href="../servicios" class="two columns text-center block navbar-link one-top-margin-text">SERVICIOS</a>
-            <a href="../cotizar" class="two columns text-center block navbar-link one-top-margin-text">COTIZAR</a>
+        <div class="one-offset columns ten one-height mobile-hide">
+            <a href="../nosotros/"class="two columns text-center block navbar-link one-top-margin-text">NOSOTROS</a>
+            <a href="../proyectos/" class="two columns text-center block navbar-link one-top-margin-text">PROYECTOS</a>
+            <a href="../servicios/" class="two columns text-center block navbar-link one-top-margin-text">SERVICIOS</a>
+            <a href="../cotizar/" class="two columns text-center block navbar-link one-top-margin-text">COTIZAR</a>
             <a class="active-link two columns text-center block navbar-link one-top-margin-text">EMPLEO</a>
         </div>
-        <div class="five-offset one columns">
+        <div class="five-offset one columns mobile-hide">
             <p class="text-right small-link one-height one-top-margin-text">COOKIES<br>© GCP 2020</p>
         </div>
+
+        <div class="hamburger mobile-show" onclick="document.querySelector('ul').classList.toggle('open');">
+            <div class="line"></div>
+            <div class="line line-margin"></div>
+            <div class="line"></div>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <div class="absolute-center mid-white">
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../nosotros/">
+                        NOSOTROS
+                    </a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../proyectos">
+                        PROYECTOS
+                    </a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../servicios">SERVICIOS</a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../cotizar">COTIZAR</a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../empleo">EMPLEO</a>
+                </li>
+            </div>
+        </ul>
     </nav>
 
-    <div class="two-top-margin one-offset columns eight two-height">
-        <h1 class="margin-none columns twenty title-header one-height headers-cotepsa">En GCP,</h1>
-        <h1 class="margin-none two-offset columns twenty title-header one-height headers-cotepsa">te estamos</h1>
-        <h1 class="margin-none one-offset columns twenty title-header one-height headers-cotepsa">buscando</h1>
+    <div class="container">
+        <div class="two-top-margin columns eight two-height">
+            <h1 class="margin-none columns twenty title-header one-height headers-cotepsa">En GCP,</h1>
+            <h1 class="margin-none two-offset columns twenty title-header one-height headers-cotepsa">te estamos</h1>
+            <h1 class="margin-none one-offset columns twenty title-header one-height headers-cotepsa">buscando</h1>
+        </div>
+        
+        <p class="body-text two-offset eight columns three-height four-top-margin">En GCP siempre estamos buscando nuevo talento. Compártenos tu CV o visitanos en nuestros portales de empleo.</p>
+    
+        <div class="five-offset columns ten one-height one-top-margin">
+            <a href="/nosotros" class="two columns text-center block navbar-link one-top-margin-text">OCC</a>
+            <a href="/proyectos" class="two columns text-center block navbar-link one-top-margin-text">COMPUTRABAJO</a>
+            <a href="/servicios" class="two columns text-center block navbar-link one-top-margin-text">INDEED</a>
+            <a href="/cotizar" class="two columns text-center block navbar-link one-top-margin-text">FACEBOOK</a>
+            <a href="/empleo" class="two columns text-center block navbar-link one-top-margin-text">LINKEDIN</a>
+        </div>
     </div>
     
-    <p class="body-text two-offset eight columns three-height four-top-margin">En GCP siempre estamos buscando nuevo talento. Compártenos tu CV o visitanos en nuestros portales de empleo.</p>
-
-    <div class="five-offset columns ten one-height one-top-margin">
-        <a href="/nosotros" class="two columns text-center block navbar-link one-top-margin-text">OCC</a>
-        <a href="/proyectos" class="two columns text-center block navbar-link one-top-margin-text">COMPUTRABAJO</a>
-        <a href="/servicios" class="two columns text-center block navbar-link one-top-margin-text">INDEED</a>
-        <a href="/cotizar" class="two columns text-center block navbar-link one-top-margin-text">FACEBOOK</a>
-        <a href="/empleo" class="two columns text-center block navbar-link one-top-margin-text">LINKEDIN</a>
-    </div>
-
     <div class="one-height full column"></div>
 
 </body>

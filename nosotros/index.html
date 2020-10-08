@@ -8,22 +8,25 @@
     <!-- Primary Meta Tags -->
     <title>Grupo Constructor Pirámide - Nosotros</title>
     <meta name="title" content="Conoce al Grupo Constructor Pirámide">
-    <meta name="description" content="GCP, es una empresa mexicana con más de 40 años de experiencia en construcción y rehabilitación de carreteras, urbanización y productos asfálticos.">
+    <meta name="description"
+        content="GCP, es una empresa mexicana con más de 40 años de experiencia en construcción y rehabilitación de carreteras, urbanización y productos asfálticos.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://constructoracofsa.com/nosotros">
     <meta property="og:title" content="Conoce al Grupo Constructor Pirámide">
-    <meta property="og:description" content="GCP, es una empresa mexicana con más de 40 años de experiencia en construcción y rehabilitación de carreteras, urbanización y productos asfálticos.">
+    <meta property="og:description"
+        content="GCP, es una empresa mexicana con más de 40 años de experiencia en construcción y rehabilitación de carreteras, urbanización y productos asfálticos.">
     <meta property="og:image" content="../img/CAPIRSA/CAPIRSA2.jpeg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="og:url" content="http://constructoracofsa.com/nosotros">
     <meta property="twitter:title" content="Conoce al Grupo Constructor Pirámide">
-    <meta property="twitter:description" content="GCP, es una empresa mexicana con más de 40 años de experiencia en construcción y rehabilitación de carreteras, urbanización y productos asfálticos.">
+    <meta property="twitter:description"
+        content="GCP, es una empresa mexicana con más de 40 años de experiencia en construcción y rehabilitación de carreteras, urbanización y productos asfálticos.">
     <meta property="twitter:image" content="../img/CAPIRSA/CAPIRSA2.jpeg">
-    
+
     <!-- CSS -->
     <link rel='stylesheet' href='https://dpalme.github.io/Peoria/css/peoria-0-3-1.css'>
     <link rel='stylesheet' href='https://dpalme.github.io/Peoria/css/normalize.css'>
@@ -31,42 +34,83 @@
 </head>
 
 <body>
-    <nav class="full column fixed front">
+    <nav class="container fixed front">
         <a href="../">
-            <img src="../img/Logos_Unidades de Negocio/Logo_GCP.png" class="one columns one-offset half-top-margin" />
+            <img src="../img/Logos_Unidades de Negocio/Logo_GCP.png" class="one columns half-top-margin" />
         </a>
-        <div class="one-offset columns ten one-height">
+        <div class="one-offset columns ten one-height mobile-hide">
             <a class="active-link two columns text-center block navbar-link one-top-margin-text">NOSOTROS</a>
             <a href="../proyectos" class="two columns text-center block navbar-link one-top-margin-text">PROYECTOS</a>
             <a href="../servicios" class="two columns text-center block navbar-link one-top-margin-text">SERVICIOS</a>
             <a href="../cotizar" class="two columns text-center block navbar-link one-top-margin-text">COTIZAR</a>
             <a href="../empleo" class="two columns text-center block navbar-link one-top-margin-text">EMPLEO</a>
         </div>
-        <div class="five-offset one columns">
+        <div class="five-offset one columns mobile-hide">
             <p class="text-right small-link one-height one-top-margin-text">COOKIES<br>© GCP 2020</p>
         </div>
+
+        <div class="hamburger mobile-show" onclick="document.querySelector('ul').classList.toggle('open');">
+            <div class="line"></div>
+            <div class="line line-margin"></div>
+            <div class="line"></div>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <div class="absolute-center mid-white">
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../nosotros/">
+                        NOSOTROS
+                    </a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../proyectos">
+                        PROYECTOS
+                    </a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../servicios">SERVICIOS</a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../cotizar">COTIZAR</a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../empleo">EMPLEO</a>
+                </li>
+            </div>
+        </ul>
     </nav>
 
-    <div class="three-top-margin one-offset columns eleven two-height">
-        <h1 class="margin-none columns twenty title-header one-height headers-cotepsa">En GCP, somos</h1>
-        <h1 class="margin-none two-offset columns twenty title-header one-height headers-cotepsa">Expertos en</h1>
-    </div>
-    <div class="full column">
-        <img src="../img/Clientes-&-Cámaras.png" alt="" class="two-offset eight columns one-top-margin">
-        <div class="six columns two-offset five-height">
-            <p class="body-text one-height">Asfalto</p>
-            <p class="body-text one-height two-offset columns">Carreteras</p>
-            <p class="body-text one-height four-offset columns">Urbanización</p>
-            <p class="body-text one-height two-offset columns">Concreto Hidráulico</p>
-            <p class="body-text one-height">Bancos de materiales</p>
+    <div class="container">
+        <div class="three-top-margin columns eleven two-height">
+            <h1 class="margin-none columns twenty title-header one-height headers-cotepsa">En GCP, somos</h1>
+            <h1 class="margin-none two-offset columns twenty title-header one-height headers-cotepsa">Expertos en</h1>
+        </div>
+        <div class="full column">
+            <img src="../img/Clientes-&-Cámaras.png" alt=""
+                class="one-offset eight columns one-top-margin col-margin-bottom">
+            <div class="six columns two-offset five-height">
+                <p class="body-text one-height">Asfalto</p>
+                <p class="body-text one-height two-offset columns">Carreteras</p>
+                <p class="body-text one-height four-offset columns">Urbanización</p>
+                <p class="body-text one-height two-offset columns">Concreto Hidráulico</p>
+                <p class="body-text one-height">Bancos de materiales</p>
+            </div>
+        </div>
+        <div class="full column">
+            <p class="small-body one-offset columns five one-top-margin one-bottom-margin">Cumpliendo siempre con la
+                normatividad y especificaciones de cada proyecto.</p>
         </div>
     </div>
-    <div class="full column">
-        <p class="small-body two-offset columns five one-top-margin one-bottom-margin">Cumpliendo siempre con la
-            normatividad y especificaciones de cada proyecto.</p>
-    </div>
-
-
 
 </body>
 

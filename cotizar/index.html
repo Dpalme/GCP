@@ -32,41 +32,92 @@
 </head>
 
 <body>
-    <nav class="full column fixed front">
+    <nav class="container fixed front">
         <a href="../">
-            <img src="../img/Logos_Unidades de Negocio/Logo_GCP.png" class="one columns one-offset half-top-margin" />
+            <img src="../img/Logos_Unidades de Negocio/Logo_GCP.png" class="one columns half-top-margin" />
         </a>
-        <div class="one-offset columns ten one-height">
-            <a href="../nosotros" class="two columns text-center block navbar-link one-top-margin-text">NOSOTROS</a>
-            <a href="../proyectos" class="two columns text-center block navbar-link one-top-margin-text">PROYECTOS</a>
-            <a href="../servicios" class="two columns text-center block navbar-link one-top-margin-text">SERVICIOS</a>
+        <div class="one-offset columns ten one-height mobile-hide">
+            <a href="../nosotros/"class="two columns text-center block navbar-link one-top-margin-text">NOSOTROS</a>
+            <a href="../proyectos/" class="two columns text-center block navbar-link one-top-margin-text">PROYECTOS</a>
+            <a href="../servicios/" class="two columns text-center block navbar-link one-top-margin-text">SERVICIOS</a>
             <a class="active-link two columns text-center block navbar-link one-top-margin-text">COTIZAR</a>
             <a href="../empleo" class="two columns text-center block navbar-link one-top-margin-text">EMPLEO</a>
         </div>
-        <div class="five-offset one columns">
+        <div class="five-offset one columns mobile-hide">
             <p class="text-right small-link one-height one-top-margin-text">COOKIES<br>© GCP 2020</p>
         </div>
+
+        <div class="hamburger mobile-show" onclick="document.querySelector('ul').classList.toggle('open');">
+            <div class="line"></div>
+            <div class="line line-margin"></div>
+            <div class="line"></div>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <div class="absolute-center mid-white">
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../nosotros/">
+                        NOSOTROS
+                    </a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../proyectos">
+                        PROYECTOS
+                    </a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../servicios">SERVICIOS</a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../cotizar">COTIZAR</a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../empleo">EMPLEO</a>
+                </li>
+            </div>
+        </ul>
     </nav>
 
-    <div class="three-top-margin one-offset columns eleven two-height">
-        <h1 class="margin-none columns twenty title-header one-height headers-cotepsa">En GCP,</h1>
-        <h1 class="margin-none one-offset columns twenty title-header one-height headers-cotepsa">te escuchamos</h1>
+    <div class="container">
+        <div class="three-top-margin columns eleven two-height">
+            <h1 class="margin-none columns twenty title-header one-height headers-cotepsa">En GCP,</h1>
+            <h1 class="margin-none one-offset columns twenty title-header one-height headers-cotepsa">te escuchamos</h1>
+        </div>
+        
+        <form class="six columns one-offset two-top-margin">
+            <div class="six columns">
+                <label for="name" class="proyect-name one-height vertical-center-text">NAME</label>
+                <input id="name" type="text" class="one-height six columns block vertical-center-text">
+            </div>
+            
+            <div class="six columns">
+                <label for="email" class="proyect-name one-height vertical-center-text">EMAIL</label>
+                <input id="email" type="email" class="one-height six columns block vertical-center-text">
+            </div>
+            
+            <div class="six columns">
+                <label for="subject" class="proyect-name one-height vertical-center-text">SUBJECT</label>
+                <input id="subject" type="text" class="one-height six columns block vertical-center-text">
+            </div>
+            
+            <div class="six columns">
+                <label for="message" class="proyect-name one-height vertical-center-text">message</label>
+                <textarea id="message" type="text" class="three-height six columns block"></textarea>
+            </div>
+            
+        </form>
     </div>
     
-    <form class="six columns one-offset five-top-margin">
-        <label for="name" class="proyect-name one-height vertical-center-text">NAME</label>
-        <input id="name" type="text" class="one-height six columns block vertical-center-text">
-        
-        <label for="email" class="proyect-name one-height vertical-center-text">EMAIL</label>
-        <input id="email" type="email" class="one-height six columns block vertical-center-text">
-
-        <label for="subject" class="proyect-name one-height vertical-center-text">SUBJECT</label>
-        <input id="subject" type="text" class="one-height six columns block vertical-center-text">
-
-        <label for="message" class="proyect-name one-height vertical-center-text">message</label>
-        <textarea id="message" type="text" class="three-height six columns block"></textarea>
-    </form>
-
     <div class="one-height full column"></div>
 
 </body>

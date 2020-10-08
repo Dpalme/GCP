@@ -31,27 +31,70 @@
 </head>
 
 <body>
-    <div class="fullscreen background-cover absolute back-2"></div>
+    <nav class="container fixed front">
+        <div class="full column">
+            <img src="../img/Logos_Unidades de Negocio/Logo_GCP.png" class="one columns half-top-margin" />
+            <div class="one-offset columns ten one-height mobile-hide">
+                <a href="./nosotros" class="two columns text-center block navbar-link one-top-margin-text">NOSOTROS</a>
+                <a href="./proyectos" class="two columns text-center block navbar-link one-top-margin-text">PROYECTOS</a>
+                <a href="./servicios/" class="two columns text-center block navbar-link one-top-margin-text">SERVICIOS</a>
+                <a href="./cotizar" class="two columns text-center block navbar-link one-top-margin-text">COTIZAR</a>
+                <a href="./empleo" class="two columns text-center block navbar-link one-top-margin-text">EMPLEO</a>
+            </div>
+            <div class="five-offset one columns mobile-hide">
+                <p class="text-right small-link one-top-margin-text">COOKIES<br>© GCP 2020</p>
+            </div>
+        </div>
+        
 
-    <nav class="full column fixed front">
-        <a href="/">
-            <img src="./img/Logos_Unidades de Negocio/Logo_GCP.png" class="one columns one-offset half-top-margin" />
-        </a>
-        <div class="one-offset columns ten one-height">
-            <a href="./nosotros" class="two columns text-center block navbar-link one-top-margin-text">NOSOTROS</a>
-            <a href="./proyectos" class="two columns text-center block navbar-link one-top-margin-text">PROYECTOS</a>
-            <a href="./servicios" class="two columns text-center block navbar-link one-top-margin-text">SERVICIOS</a>
-            <a href="./cotizar" class="two columns text-center block navbar-link one-top-margin-text">COTIZAR</a>
-            <a href="./empleo" class="two columns text-center block navbar-link one-top-margin-text">EMPLEO</a>
+        <div class="hamburger mobile-show" onclick="document.querySelector('ul').classList.toggle('open');">
+            <div class="line"></div>
+            <div class="line line-margin"></div>
+            <div class="line"></div>
         </div>
-        <div class="five-offset one columns">
-            <p class="text-right small-link one-height one-top-margin-text">COOKIES<br>© GCP 2020</p>
-        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <div class="absolute-center mid-white">
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../nosotros/">
+                        NOSOTROS
+                    </a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../proyectos">
+                        PROYECTOS
+                    </a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../servicios">SERVICIOS</a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../cotizar">COTIZAR</a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../empleo">EMPLEO</a>
+                </li>
+            </div>
+        </ul>
     </nav>
 
-    <div class="two-top-margin one-offset columns twenty four-height">
-        <h1 class="margin-none columns twenty title-header one-height headers-cotepsa">Más de 40 años</h1>
-        <h1 class="margin-none columns twenty title-header one-height headers-cotepsa">Haciendo innovación</h1>
+    <div class="fullscreen background-cover absolute back-2"></div>
+
+    <div class="container five-height">
+        <h1 class="margin-none columns two-top-margin twenty title-header one-height headers-cotepsa">Más de 40 años</h1>
+        <h1 class="margin-none columns twenty title-header one-height headers-cotepsa mobile-hide">Haciendo innovación</h1>
+        <h1 class="margin-none columns twenty title-header one-height headers-cotepsa mobile-show">Haciendo</h1>
+        <h1 class="margin-none columns twenty title-header one-height headers-cotepsa mobile-show">innovación</h1>
         <h1 class="margin-none two-offset columns twenty title-header one-height headers-cotepsa">Rentable y</h1>
         <h1 class="margin-none one-offset columns twenty title-header one-height headers-cotepsa">sostenible</h1>
     </div>

@@ -31,51 +31,91 @@
 </head>
 
 <body>
-    <nav class="full column fixed front">
+    <nav class="container fixed front">
         <a href="../">
-            <img src="../img/Logos_Unidades de Negocio/Logo_GCP.png" class="one columns one-offset half-top-margin" />
+            <img src="../img/Logos_Unidades de Negocio/Logo_GCP.png" class="one columns half-top-margin" />
         </a>
-        <div class="one-offset columns ten one-height">
-            <a href="../nosotros/" class="two columns text-center block navbar-link one-top-margin-text">NOSOTROS</a>
+        <div class="one-offset columns ten one-height mobile-hide">
+            <a href="../nosotros/"class="two columns text-center block navbar-link one-top-margin-text">NOSOTROS</a>
             <a href="../proyectos" class="two columns text-center block navbar-link one-top-margin-text">PROYECTOS</a>
             <a class="active-link two columns text-center block navbar-link one-top-margin-text">SERVICIOS</a>
             <a href="../cotizar" class="two columns text-center block navbar-link one-top-margin-text">COTIZAR</a>
             <a href="../empleo" class="two columns text-center block navbar-link one-top-margin-text">EMPLEO</a>
         </div>
-        <div class="five-offset one columns">
+        <div class="five-offset one columns mobile-hide">
             <p class="text-right small-link one-height one-top-margin-text">COOKIES<br>© GCP 2020</p>
         </div>
+
+        <div class="hamburger mobile-show" onclick="document.querySelector('ul').classList.toggle('open');">
+            <div class="line"></div>
+            <div class="line line-margin"></div>
+            <div class="line"></div>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <div class="absolute-center mid-white">
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../nosotros/">
+                        NOSOTROS
+                    </a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../proyectos">
+                        PROYECTOS
+                    </a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../servicios">SERVICIOS</a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../cotizar">COTIZAR</a>
+                </li>
+                <li>
+                    <a class="text-link main-title text-center" tabindex="0"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        href="../empleo">EMPLEO</a>
+                </li>
+            </div>
+        </ul>
     </nav>
 
 
-    <div class="three-top-margin columns seven one-offset two-height">
-        <h1 class="margin-none columns seven title-header one-height headers-cotepsa">En GCP,</h1>
-        <h1 class="margin-none one-offset columns seven title-header one-height headers-cotepsa">Hacemos</h1>
-    </div>
-
-    <div class="three-offset thirteen columns one-top-margin">
-        <a class="active-link text-link text-center block three columns one-height headers-opcion-2 vertical-center-text">CONSTRUCCIÓN</a>
-        <a class="text-link text-center block three columns one-height headers-caprisa vertical-center-text">ASFALTO</a>
-        <a class="text-link text-center block three columns one-height headers-remp vertical-center-text">MAQUINARIA</a>
-        <a class="text-link text-center block four columns one-height headers-emsa vertical-center-text">EMULSIÓN ASFÁLTICA</a>
-    </div>
-
-    <div class="two-offset columns fifteen">
-        <img src="../img/Logos_Unidades de Negocio/Logo_Constructora.png" alt="GCP" class="one-height one columns small-top-margin">
-        <img src="../img/GCP/GCP2.jpg" alt="GCP Landing" class="five-height two-offset five columns one-top-margin image-cover">
-        <div class="six columns one-offset one-top-margin">
-            <h2 class="proyect-name one-height vertical-center-text">SERVICIOS</h2>
-            <p class="small-body four-height">Construcción y rehabilitación de tramos carreteros.<br>
-                Rehabilitación de pistas aéreas, rodajes y plataformas en aeropuertos.<br>
-                MOvimientos de tierra.<br>
-                Obras hidráulicas.<br>
-                Parques industriales.<br>
-                Urbanización.<br>
-                Ciclopistas.<br>
-                </p>
+    <div class="container">
+        <div class="three-top-margin columns seven two-height">
+            <h1 class="margin-none columns seven title-header one-height headers-cotepsa">En GCP,</h1>
+            <h1 class="margin-none one-offset columns seven title-header one-height headers-cotepsa">Hacemos</h1>
+        </div>
+    
+        <div class="three-offset thirteen columns one-top-margin">
+            <a class="active-link text-link text-center block three columns one-height headers-opcion-2 vertical-center-text">CONSTRUCCIÓN</a>
+            <a class="text-link text-center block three columns one-height headers-caprisa vertical-center-text">ASFALTO</a>
+            <a class="text-link text-center block three columns one-height headers-remp vertical-center-text">MAQUINARIA</a>
+            <a class="text-link text-center block four columns one-height headers-emsa vertical-center-text">EMULSIÓN ASFÁLTICA</a>
+        </div>
+        <div class="one-offset columns sixteen">
+            <img src="../img/Logos_Unidades de Negocio/Logo_Constructora.png" alt="GCP" class="one-height gutter-margin-right one columns small-top-margin">
+            <img src="../img/GCP/GCP2.jpg" alt="GCP Landing" class="five-height one-offset five columns one-top-margin image-cover">
+            <div class="two-offset six columns one-top-margin">
+                <h2 class="proyect-name one-height vertical-center-text">SERVICIOS</h2>
+                <p class="small-body">Construcción y rehabilitación de tramos carreteros.<br>
+                    Rehabilitación de pistas aéreas, rodajes y plataformas en aeropuertos.<br>
+                    Movimientos de tierra.<br>
+                    Obras hidráulicas.<br>
+                    Parques industriales.<br>
+                    Urbanización.<br>
+                    Ciclopistas.<br>
+                    </p>
+            </div>
         </div>
     </div>
-
     <div class="one-height full column"></div>
 
 

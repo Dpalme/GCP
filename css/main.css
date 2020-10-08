@@ -21,6 +21,10 @@ body {
     width: 100%;
 }
 
+.vertical-center-text {
+    line-height: 5vw !important;
+}
+
 .background-cover {
     background: url('../img/desktop-background.png') no-repeat center center fixed;
     background-position: center top;
@@ -92,7 +96,7 @@ body {
     text-decoration: underline;
 }
 
-.small-top-margin   {   margin-top: 8px;     }
+.small-top-margin   {   margin-top: 1.5vw;     }
 .half-top-margin    {   margin-top: 2.5vw;   }
 .one-top-margin-text{   margin-top: 4vw;     }
 .one-top-margin     {   margin-top: 5vw;     }

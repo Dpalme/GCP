@@ -38,6 +38,22 @@ body {
     color: var(--headers-cotepsa);
 }
 
+.headers-opcion-2 {
+    color: var(--headers-opcion-dos);
+}
+
+.headers-caprisa {
+    color: var(--headers-caprisa);
+}
+
+.headers-remp {
+    color: var(--headers-remppirsa);
+}
+
+.headers-emsa {
+    color: var(--headers-emsa);
+}
+
 .align-bottom {
     vertical-align: text-bottom;
 }
@@ -105,6 +121,7 @@ body {
 .four-top-margin    {   margin-top: 20vw;    }
 .five-top-margin    {   margin-top: 25vw;    }
 .six-top-margin     {   margin-top: 30vw;    }
+.seven-top-margin   {   margin-top: 35vw;    }
 
 .one-bottom-margin  {   margin-bottom: 5vw;  }
 

@@ -46,41 +46,43 @@
             <p class="text-right small-link one-height one-top-margin-text">COOKIES<br>© GCP 2020</p>
         </div>
 
-        <div class="hamburger mobile-show" onclick="document.querySelector('ul').classList.toggle('open');">
+        <div class="hamburger mobile-show" onclick="document.querySelector('ul').classList.toggle('open'); document.getElementById('left-side').classList.toggle('open');">
             <div class="line"></div>
             <div class="line line-margin"></div>
             <div class="line"></div>
         </div>
 
-        <ul class="nav-links" id="navLinks">
+        <div id="left-side" class="nav-links" style="background: #fff9 !important; left: 0 !important;" onclick="document.querySelector('ul').classList.toggle('open'); document.getElementById('left-side').classList.toggle('open');"></div>
+
+        <ul class="nav-links">
             <div class="absolute-center mid-white">
                 <li>
                     <a class="text-link main-title text-center" tabindex="0"
-                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.getElementById('left-side').classList.toggle('open');"
                         href="../nosotros/">
                         NOSOTROS
                     </a>
                 </li>
                 <li>
                     <a class="text-link main-title text-center" tabindex="0"
-                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.getElementById('left-side').classList.toggle('open');"
                         href="../proyectos">
                         PROYECTOS
                     </a>
                 </li>
                 <li>
                     <a class="text-link main-title text-center" tabindex="0"
-                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.getElementById('left-side').classList.toggle('open');"
                         href="../servicios">SERVICIOS</a>
                 </li>
                 <li>
                     <a class="text-link main-title text-center" tabindex="0"
-                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.getElementById('left-side').classList.toggle('open');"
                         href="../cotizar">COTIZAR</a>
                 </li>
                 <li>
                     <a class="text-link main-title text-center" tabindex="0"
-                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
+                        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.getElementById('left-side').classList.toggle('open');"
                         href="../empleo">EMPLEO</a>
                 </li>
             </div>

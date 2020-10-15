@@ -62,15 +62,16 @@ body {
 
 .title-header {
     font-weight: 300;
-    font-size: 6em;
+    font-size: 4em;
     line-height: 1em;
     text-transform: uppercase;
 }
 
 .subtitle-header {
-    font-weight: normal;
-    font-size: 4em;
+    font-weight: 300;
+    font-size: 3em;
     line-height: 1em;
+    text-transform: uppercase;
 }
 
 .body-text {
@@ -100,7 +101,7 @@ body {
 .small-body {
     font-style: normal;
     font-weight: 200;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.5em;
 }
 
@@ -413,7 +414,7 @@ body {
 }
 
 .bold {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .float-right {
@@ -424,13 +425,13 @@ body {
     :root {
         --grid: 2vw;
 
-        font-size: 1.666vw;
+        font-size: 3vw;
     }
 
     .container {
         width: 90vw !important;
         padding-left: 5vw !important;
-        margin: none !important;
+        margin: 0 !important;
     }
 
     .mobile-hide {

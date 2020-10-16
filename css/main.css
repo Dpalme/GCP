@@ -112,6 +112,12 @@ body {
     line-height: 1.5em;
 }
 
+.proyect-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .navbar-link:hover,
 .navbar-link:active,
 .text-link:hover,
@@ -183,6 +189,27 @@ body {
 .five-height {
     height: calc(25*var(--grid));
 }
+
+.six-height {
+    height: calc(30*var(--grid));
+}
+
+.seven-height {
+    height: calc(35*var(--grid));
+}
+
+.eight-height {
+    height: calc(40*var(--grid));
+}
+
+.nine-height {
+    height: calc(45*var(--grid));
+}
+
+.ten-height {
+    height: calc(50*var(--grid));
+}
+
 
 .column,
 .columns {
